@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Users app</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" 
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" 
+          crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Welcome to your polls, 
+      </h1>
+        <div class="row">
+          <div class="col col-4"></div>
+          <div class="col col-2">
+            <form action="/" method="get">
+              <button class="btn btn-success">
+                All Polls
+              </button>
+            </form> 
+          </div>
+          <div class="col col-2">
+          <form class="logout-form" action="/logout" method="get">
+            <button class="btn btn-danger">
+              Logout
+            </button>
+          </form> 
+          </div>
+          <div class="col col-4"></div>
+        </div>
+    </header>
+
+    <main>  
+      <div class="container">       
+        <div class="row">
+          <div class="col col-6">
+            <h5 class="text-center">
+              Your polls:
+            </h5>
+            <div class="poll-list"></div> 
+          </div>
+          <div class="col col-6">
+            <h5 class="graph-title text-center"></h5>
+            
+            <form action="/newpoll" method="post" class="new-poll hidden">
+              <button class="btn btn-primary">
+                Create New Poll
+              </button>
+              <div class="btn btn-success new-option">
+                +
+              </div>       
+              <br>
+              <br>
+              <input name="title" maxlength="100" placeholder="title" type="text" class="form-control new-title" required>
+              <br>
+              <input name="option" maxlength="100" placeholder="option 1" type="text" class="form-control" required>
+              <input name="option" maxlength="100" placeholder="option 2" type="text" class="form-control" required>
+            </form>
+            <svg class="chart chart-style"></svg>
+          </div>
+        </div>  
+        <div class="row">
+          <div class="col col-3"></div>
+          <div class="col col-6">
+            
+          </div>
+          <div class="col col-3">            
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        by Michelino
+      </p>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" 
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" 
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" 
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" 
+            crossorigin="anonymous"></script>
+    <script src="/home.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "name": "poll-app",
+  "version": "0.0.1",
+  "description": "create your personal poll",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "mongodb": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "body-parser" : "*",
+    "express-session" : "*",
+    "connect-mongo" : "*",
+    "bcrypt-nodejs" : "*",
+    "d3" : "*"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": ""
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}

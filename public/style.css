@@ -1,0 +1,96 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  padding: 0 0 80px; /* bottom = footer height */
+}
+footer{
+  background-color: #e0e0e0;
+  padding-top: 10px;
+  padding-left: 100px;
+  color: grey;
+  border-top: solid;
+  border-color: grey;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  overflow:hidden;
+}
+
+header{
+  text-align : center;
+  padding : 40px;
+  background-color: steelblue;
+  color: white;
+  text-shadow: 0px 0px 3px black;
+}
+
+.account-wall{
+  border-radius: 1%;
+  box-shadow: 0px 0px 5px black;
+  padding: 40px;
+}
+
+h4{
+  text-align: center;
+}
+.hidden{
+  display : none !important;
+}
+.chart rect{
+  fill: steelblue;
+}
+.poll{
+  padding : 20px;
+  background-color : lightgrey;
+}
+.poll:hover{
+  opacity: 0.5;
+}
+.on-display{
+  background-color : white !important;
+  box-shadow: 0px 0px 5px black;
+  z-index : 100;
+}
+.on-display:hover{
+  opacity: 1 !important;
+}
+.new-poll{
+  box-shadow: 0px 0px 5px black;
+  padding: 20px;
+
+}
+#poll-form{
+  background: #b9f6ca;
+}
+.container{
+  margin-top: 50px;
+}
+
+.chart rect:hover{
+  fill: lightsteelblue;
+}
+.delete-button{
+  float: right;
+}
+.plus-button{
+  float: right;
+}
+.x-button{
+  float: right;
+  color: red;
+}
+.single-poll{
+  float: right;
+}
+.poll{
+  height: 80px;
+  position: relative;
+}
+.chart-style{
+  box-shadow: 0px 0px 5px black;
+  width: 600px ;
+}
