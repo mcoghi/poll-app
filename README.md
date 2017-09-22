@@ -1,6 +1,6 @@
-Manage users in Express/Passport
+Poll App
 =========================
 
-https://mhl-playusers.glitch.me/
+https://mhl-pollapp.glitch.me/
 
-This is the basic, get back to this app if you need it.
+A simple app that lets you create your own polls and share them to other to vote.
